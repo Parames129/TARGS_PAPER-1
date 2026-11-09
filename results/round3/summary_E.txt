@@ -1,0 +1,18 @@
+
+=== E1 Mismatch effects (v2 background; subject 5-fold CV over 3 cohorts): fixed vs IAF-adjusted bands ===
+bands                                     fixed            iaf
+mode       effect strength model                              
+alpha_slow 0.0    0.5      LR     0.569 ± 0.061  0.574 ± 0.052
+                           RF     0.587 ± 0.047  0.579 ± 0.041
+                  1.0      LR     0.720 ± 0.022  0.729 ± 0.022
+                           RF     0.736 ± 0.015  0.745 ± 0.015
+                  1.5      LR     0.843 ± 0.012  0.844 ± 0.011
+                           RF     0.859 ± 0.009  0.858 ± 0.015
+boundary   0.6    0.0      LR     0.835 ± 0.025  0.854 ± 0.023
+                           RF     0.815 ± 0.018  0.817 ± 0.025
+coupling   0.0    0.3      LR     0.647 ± 0.051  0.649 ± 0.067
+                           RF     0.585 ± 0.044  0.581 ± 0.039
+                  0.6      LR     0.707 ± 0.042  0.709 ± 0.062
+                           RF     0.637 ± 0.045  0.634 ± 0.046
+regional   0.6    0.0      LR     0.862 ± 0.025  0.876 ± 0.020
+                           RF     0.837 ± 0.014  0.838 ± 0.015

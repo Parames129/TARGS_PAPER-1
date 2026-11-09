@@ -1,0 +1,12 @@
+=== G: cohort = unit of analysis (two halves averaged within a cohort); 95% CI over cohorts ===
+  gen model                      row  n_cohorts         unseen           seen   d_acc   ci_lo   ci_hi       p  p_holm
+0  v2    LR          held-out full19         10  0.799 ± 0.048  0.811 ± 0.035 -0.0119 -0.0334  0.0096  0.2429  0.5077
+1  v2    LR        held-out openbci8         10  0.773 ± 0.035  0.800 ± 0.043 -0.0269 -0.0676  0.0138  0.1692  0.5077
+2  v2    LR          held-out random         10  0.760 ± 0.042  0.760 ± 0.054 -0.0004 -0.0288  0.0279  0.9731  0.9731
+3  v2    LR     EGI unseen vs cv_all         10  0.822 ± 0.058  0.804 ± 0.033  0.0183 -0.0236  0.0603  0.3490     NaN
+4  v2    LR  EGI unseen vs cv_full19         10  0.822 ± 0.058  0.827 ± 0.039 -0.0045 -0.0436  0.0346  0.8018     NaN
+5  v2    RF          held-out full19         10  0.780 ± 0.044  0.774 ± 0.045  0.0055 -0.0168  0.0278  0.5903  0.9142
+6  v2    RF        held-out openbci8         10  0.765 ± 0.046  0.778 ± 0.041 -0.0134 -0.0521  0.0254  0.4547  0.9142
+7  v2    RF          held-out random         10  0.765 ± 0.040  0.759 ± 0.052  0.0062 -0.0067  0.0191  0.3047  0.9142
+8  v2    RF     EGI unseen vs cv_all         10  0.788 ± 0.049  0.782 ± 0.028  0.0056 -0.0315  0.0426  0.7424     NaN
+9  v2    RF  EGI unseen vs cv_full19         10  0.788 ± 0.049  0.790 ± 0.043 -0.0027 -0.0473  0.0420  0.8958     NaN

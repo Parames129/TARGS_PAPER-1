@@ -1,0 +1,32 @@
+=== F: cohort = unit of analysis (two halves averaged within a cohort); 95% CI over cohorts ===
+  gen model                      row  n_cohorts         unseen           seen   d_acc   ci_lo   ci_hi       p  p_holm
+0  v3    LR          held-out full19         10  0.706 ± 0.060  0.747 ± 0.055 -0.0411 -0.0828  0.0006  0.0528  0.1583
+1  v3    LR        held-out openbci8         10  0.619 ± 0.090  0.681 ± 0.051 -0.0617 -0.1266  0.0032  0.0601  0.1583
+2  v3    LR          held-out random         10  0.679 ± 0.042  0.662 ± 0.032  0.0172 -0.0069  0.0412  0.1407  0.1583
+3  v3    LR     EGI unseen vs cv_all         10  0.761 ± 0.037  0.707 ± 0.033  0.0544  0.0192  0.0897  0.0068     NaN
+4  v3    LR  EGI unseen vs cv_full19         10  0.761 ± 0.037  0.774 ± 0.049 -0.0125 -0.0598  0.0348  0.5638     NaN
+5  v3    RF          held-out full19         10  0.612 ± 0.060  0.649 ± 0.048 -0.0374 -0.0880  0.0132  0.1290  0.3869
+6  v3    RF        held-out openbci8         10  0.589 ± 0.113  0.601 ± 0.049 -0.0123 -0.0949  0.0703  0.7442  1.0000
+7  v3    RF          held-out random         10  0.623 ± 0.058  0.615 ± 0.056  0.0077 -0.0226  0.0380  0.5801  1.0000
+8  v3    RF     EGI unseen vs cv_all         10  0.660 ± 0.066  0.641 ± 0.034  0.0194 -0.0359  0.0748  0.4475     NaN
+9  v3    RF  EGI unseen vs cv_full19         10  0.660 ± 0.066  0.672 ± 0.054 -0.0121 -0.0670  0.0427  0.6293     NaN
+
+=== F2 Regime of the 8 effect-region neural masses (per subject: median peak frequency, share of effect columns with peak outside 7.5-13 Hz, median skewness, share |skew|>1, SD ratio effect/other regions) ===
+           eff_peak_hz        eff_frac_nonalpha        eff_skew        eff_frac_skew1      eff_sd_ratio       
+                median   mean            median   mean   median   mean         median mean       median   mean
+eta  label                                                                                                    
+0.12 0           9.250  8.574             0.000  0.296    0.156  0.314            0.0  0.0        0.998  1.002
+     1           7.438  7.779             0.500  0.494    0.550  0.474            0.0  0.0        1.544  1.873
+0.30 0           9.125  8.430             0.000  0.326    0.205  0.338            0.0  0.0        1.000  1.003
+     1           6.750  7.295             0.875  0.663    0.678  0.581            0.0  0.0        2.085  2.743
+
+=== F3 Share of subjects out of the alpha regime ===
+    eta  label     n  share_subjects_peak_below_7p5  share_subjects_any_column_skew_gt1  share_subjects_majority_cols_nonalpha  peak_shift_vs_controls
+0  0.12      0  1800                          0.290                                 0.0                                  0.273                     NaN
+1  0.12      1  1800                          0.500                                 0.0                                  0.476                  -1.812
+2  0.30      0   540                          0.315                                 0.0                                  0.304                     NaN
+3  0.30      1   540                          0.676                                 0.0                                  0.656                  -2.375
+
+=== F4 Dyslexic subjects (eta=0.12): Spearman rho of eps_i with effect-column peak frequency and SD ratio ===
+rho_eps_peak      -0.075
+rho_eps_sdratio    0.362

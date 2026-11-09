@@ -1,0 +1,16 @@
+seed,set,model,coverage,acc,auc
+0,77 features (5 rel. powers per region),RF,1.0,0.7333333333333333,0.8356172839506173
+0,77 features (5 rel. powers per region),LR,1.0,0.7805555555555556,0.8738888888888888
+0,drop gamma (4 rel. powers per region),RF,1.0,0.7166666666666667,0.8266975308641976
+0,drop gamma (4 rel. powers per region),LR,1.0,0.775,0.8636111111111111
+0,check: sum of P_L relative powers,-,,0.9999999999999856,8.861893139938498e-15
+1,77 features (5 rel. powers per region),RF,1.0,0.7611111111111111,0.823456790123457
+1,77 features (5 rel. powers per region),LR,1.0,0.7527777777777778,0.8331481481481482
+1,drop gamma (4 rel. powers per region),RF,1.0,0.7666666666666667,0.820246913580247
+1,drop gamma (4 rel. powers per region),LR,1.0,0.7472222222222222,0.8287962962962963
+1,check: sum of P_L relative powers,-,,0.9999999999999859,8.865617026114506e-15
+2,77 features (5 rel. powers per region),RF,1.0,0.7861111111111111,0.8520061728395062
+2,77 features (5 rel. powers per region),LR,1.0,0.8083333333333333,0.8799074074074075
+2,drop gamma (4 rel. powers per region),RF,1.0,0.7833333333333333,0.8433641975308642
+2,drop gamma (4 rel. powers per region),LR,1.0,0.7972222222222223,0.8667592592592592
+2,check: sum of P_L relative powers,-,,0.9999999999999857,9.113101406062074e-15

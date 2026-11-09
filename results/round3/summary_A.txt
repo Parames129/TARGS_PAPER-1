@@ -1,0 +1,80 @@
+
+=== A1 Reference choice (subject 5-fold CV, mean ± SD over 5 cohorts). ideal_* = no physical reference (as in the main simulations); cz_* = recorded against a physical Cz electrode ===
+                                       auc            acc  cov     acc19      acc8      accR
+sim model variant                                                                           
+v1  LR    cz_car             0.995 ± 0.003  0.971 ± 0.007  1.0  0.991703  0.940032  0.972592
+          cz_median          0.994 ± 0.003  0.969 ± 0.006  1.0  0.990050  0.940032  0.969966
+          cz_none            0.918 ± 0.014  0.839 ± 0.025  1.0  0.868992  0.804930  0.837610
+          cz_rest            0.993 ± 0.005  0.966 ± 0.009  1.0  0.988477  0.934336  0.968090
+          ideal_car          0.990 ± 0.001  0.968 ± 0.007  1.0  0.986380  0.933935  0.973507
+          ideal_none         0.999 ± 0.003  0.996 ± 0.004  1.0  0.996734  0.994188  0.997063
+    RF    cz_car             0.996 ± 0.002  0.975 ± 0.007  1.0  0.993022  0.943957  0.980265
+          cz_median          0.996 ± 0.002  0.975 ± 0.007  1.0  0.993397  0.944209  0.980265
+          cz_none            0.940 ± 0.016  0.869 ± 0.029  1.0  0.898457  0.833473  0.868499
+          cz_rest            0.995 ± 0.003  0.974 ± 0.007  1.0  0.994857  0.941915  0.977151
+          ideal_car          0.993 ± 0.003  0.971 ± 0.004  1.0  0.987880  0.933701  0.981315
+          ideal_none         0.999 ± 0.002  0.997 ± 0.003  1.0  0.994899  0.996093  0.998462
+v2  LR    cz_car             0.874 ± 0.024  0.801 ± 0.037  1.0  0.844714  0.807773  0.757139
+          cz_median          0.876 ± 0.021  0.797 ± 0.032  1.0  0.834637  0.789771  0.769246
+          cz_none            0.839 ± 0.025  0.767 ± 0.023  1.0  0.792880  0.756005  0.751992
+          cz_rest            0.872 ± 0.022  0.796 ± 0.039  1.0  0.833104  0.807910  0.754138
+          ideal_car          0.872 ± 0.031  0.804 ± 0.045  1.0  0.844696  0.806676  0.768609
+          ideal_car+age      0.880 ± 0.029  0.810 ± 0.035  1.0  0.836170  0.807058  0.790516
+          ideal_car_iaf      0.879 ± 0.024  0.806 ± 0.013  1.0  0.845039  0.813137  0.766773
+          ideal_car_iaf+age  0.882 ± 0.020  0.805 ± 0.020  1.0  0.839466  0.816434  0.767731
+          ideal_none         0.882 ± 0.031  0.812 ± 0.031  1.0  0.849018  0.801842  0.787540
+    RF    cz_car             0.854 ± 0.027  0.768 ± 0.026  1.0  0.793372  0.763425  0.750854
+          cz_median          0.854 ± 0.026  0.775 ± 0.025  1.0  0.795194  0.766943  0.764200
+          cz_none            0.831 ± 0.031  0.764 ± 0.034  1.0  0.789661  0.747426  0.755315
+          cz_rest            0.854 ± 0.026  0.781 ± 0.030  1.0  0.801086  0.766066  0.775043
+          ideal_car          0.853 ± 0.028  0.777 ± 0.030  1.0  0.803764  0.771607  0.757763
+          ideal_car+age      0.860 ± 0.030  0.784 ± 0.032  1.0  0.806578  0.767347  0.778607
+          ideal_car_iaf      0.852 ± 0.031  0.783 ± 0.034  1.0  0.807546  0.789039  0.757225
+          ideal_car_iaf+age  0.851 ± 0.021  0.778 ± 0.021  1.0  0.811816  0.769454  0.755486
+          ideal_none         0.860 ± 0.028  0.781 ± 0.027  1.0  0.799151  0.775298  0.768301
+
+=== A2 Paired differences (AUC/acc) vs CAR; Holm over the three cz_ alternatives ===
+   sim model                         variant  dAUC_vs_CAR  dACC_vs_CAR       p  p_holm
+0   v1    LR                         cz_none      -0.0762      -0.1311  0.0002  0.0006
+1   v1    LR                       cz_median      -0.0007      -0.0017  0.0042  0.0085
+2   v1    LR                         cz_rest      -0.0016      -0.0044  0.1866  0.1866
+3   v1    LR         ideal_none vs ideal_car       0.0087       0.0283  0.0018     NaN
+4   v1    RF                         cz_none      -0.0564      -0.1061  0.0011  0.0034
+5   v1    RF                       cz_median      -0.0004       0.0000  0.0921  0.1841
+6   v1    RF                         cz_rest      -0.0015      -0.0011  0.0932  0.1841
+7   v1    RF         ideal_none vs ideal_car       0.0058       0.0256  0.0116     NaN
+8   v2    LR                         cz_none      -0.0350      -0.0339  0.0024  0.0073
+9   v2    LR                       cz_median       0.0014      -0.0033  0.5726  0.8131
+10  v2    LR                         cz_rest      -0.0025      -0.0050  0.4065  0.8131
+11  v2    LR         ideal_none vs ideal_car       0.0094       0.0072  0.0988     NaN
+12  v2    LR      ideal_car_iaf vs ideal_car       0.0072       0.0017  0.2411     NaN
+13  v2    LR      ideal_car+age vs ideal_car       0.0073       0.0056  0.0152     NaN
+14  v2    LR  ideal_car_iaf+age vs ideal_car       0.0095       0.0006  0.2395     NaN
+15  v2    RF                         cz_none      -0.0230      -0.0044  0.0012  0.0037
+16  v2    RF                       cz_median      -0.0008       0.0067  0.1857  0.3714
+17  v2    RF                         cz_rest      -0.0007       0.0128  0.6980  0.6980
+18  v2    RF         ideal_none vs ideal_car       0.0072       0.0039  0.1444     NaN
+19  v2    RF      ideal_car_iaf vs ideal_car      -0.0013       0.0061  0.8201     NaN
+20  v2    RF      ideal_car+age vs ideal_car       0.0076       0.0078  0.1228     NaN
+21  v2    RF  ideal_car_iaf+age vs ideal_car      -0.0016       0.0017  0.7336     NaN
+
+=== A3 Confounds within class (Spearman rho of out-of-fold P(dyslexic) with age, true alpha peak, eps_i); last rows: IAF estimate vs true (r, MAE Hz) ===
+                                rho_age  rho_iaf  rho_eps
+variant              model cls                           
+IAF estimate vs true -     -1     0.855    0.247      NaN
+ideal_car            LR     0    -0.282   -0.474      NaN
+                            1    -0.174   -0.153    0.616
+                     RF     0    -0.361   -0.599      NaN
+                            1    -0.218   -0.236    0.595
+ideal_car+age        LR     0    -0.073   -0.396      NaN
+                            1     0.017   -0.039    0.632
+                     RF     0    -0.051   -0.457      NaN
+                            1     0.073   -0.062    0.628
+ideal_car_iaf        LR     0    -0.177   -0.314      NaN
+                            1    -0.076   -0.053    0.548
+                     RF     0    -0.264   -0.449      NaN
+                            1    -0.093   -0.091    0.500
+ideal_car_iaf+age    LR     0    -0.075   -0.305      NaN
+                            1     0.010   -0.030    0.564
+                     RF     0    -0.067   -0.391      NaN
+                            1     0.077   -0.041    0.516
