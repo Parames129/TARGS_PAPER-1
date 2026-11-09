@@ -135,7 +135,7 @@ python build_leadfield.py <path-to-MNE-sample-data> leadfield_sample.npz
 
 ## Citation
 
-Please cite the article (see `CITATION.cff`). An archived version of this repository is available at Zenodo: **[DOI to be added]**.
+Please cite the article (see `CITATION.cff`). An archived version of this repository is available at Zenodo: 10.5281/zenodo.24077685.
 
 ## Funding
 
