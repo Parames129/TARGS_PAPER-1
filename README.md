@@ -139,4 +139,4 @@ Please cite the article (see `CITATION.cff`). An archived version of this reposi
 
 ## Funding
 
-[To be added.]
+This research was supported by the T-ARGS Research Grant under the Department of Polytechnic and Community College Education (JPPKK), Ministry of Higher Education (MOHE), Malaysia. The authors gratefully acknowledge JPPKK and MOHE for their financial support and commitment to advancing research and innovation in electroencephalography (EEG) and artificial intelligence. The authors also extend their sincere appreciation to Politeknik Sultan Salahuddin Abdul Aziz Shah (PSA), Malaysia, for providing the facilities, infrastructure, and institutional support necessary for the successful implementation of this research.
