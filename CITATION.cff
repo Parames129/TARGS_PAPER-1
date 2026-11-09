@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the article below."
+title: "Interoperable EEG-based machine learning for dyslexia screening: pipeline, signal generators and analysis code"
+version: 1.0.0
+date-released: 2026-11-09
+authors:
+  - family-names: Shunmugam
+    given-names: Parameswari
+  - family-names: Mohamad Salleh
+    given-names: Nurul Huda binti
+  - family-names: Joseph
+    given-names: Agalita anak
+  - family-names: Hasib
+    given-names: Tanvir
+  - family-names: Vengadasalam
+    given-names: Vijayakumar
+preferred-citation:
+  type: article
+  title: "Interoperable EEG-based Machine Learning for Dyslexia Screening: A Simulation-Based Methodological Validation Across Heterogeneous Electrode Configurations"
+  authors:
+    - family-names: Shunmugam
+      given-names: Parameswari
+    - family-names: Mohamad Salleh
+      given-names: Nurul Huda binti
+    - family-names: Joseph
+      given-names: Agalita anak
+    - family-names: Hasib
+      given-names: Tanvir
+    - family-names: Vengadasalam
+      given-names: Vijayakumar
+  journal: "Neuroinformatics"
+  year: 2026
+  notes: "Under review."
